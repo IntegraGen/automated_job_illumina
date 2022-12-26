@@ -14,7 +14,7 @@ Informations=`ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitn
 echo "$(date --rfc-3339=ns) |ALEX_INFO| Informations = $Informations"
 
 #PROJECTS=`echo $Informations | tr "{" "\n" | grep nom | cut -f2 -d "," | sed 's/[}*]//g' | cut -f2 -d ":" |sed 's/]//g' | sed 's/"//g' | grep -v Leportier`
-PROJECTS=`echo $Informations | jq '.[0] | .nom'`
+PROJECTS=$(echo $Informations | jq -r '.[0] | .nom')
 
 echo "$(date --rfc-3339=ns) |ALEX_INFO| PROJECTS = $PROJECTS"
 if [[ "$PROJECTS" != "" ]]; then
