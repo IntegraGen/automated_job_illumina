@@ -12,22 +12,27 @@ source /home/sbsuser/.bashrc
 #faire une requete curl qui récupére les projets en statut 1 (attendre la route de Aurélie)
 ###recuperer les projet avec un statut 1
 Informations=`ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/bin/console app:project-statut-fastq-uploaded"`
+echo "$(date --rfc-3339=ns) |ALEX_INFO| Informations = $Informations"
 
 PROJECTS=`echo $Informations | tr "{" "\n" | grep nom | cut -f2 -d "," | sed 's/[}*]//g' | cut -f2 -d ":" |sed 's/]//g' | sed 's/"//g' | grep -v Leportier`
+echo "$(date --rfc-3339=ns) |ALEX_INFO| PROJECTS = $PROJECTS"
 if [[ "$PROJECTS" != "" ]]; then
-    echo "  All theses projects were got from Sirius: $PROJECTS"
+    echo "$(date --rfc-3339=ns) | All theses projects were got from Sirius: $PROJECTS"
     for project in $PROJECTS
     do
-        echo $project
+        echo "$(date --rfc-3339=ns) | Working on $project ..."
         ###s'occuper du bed du client
         #creation du projet onsite
-        mkdir -p ${PATH_PROJECT_DIR}/${project}/BED
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Workdir creation"
+        mkdir -p ${PATH_PROJECT_DIR}/${project}/BED || echo "$(date --rfc-3339=ns) |ALEX_ERROR| Workdir creation failed"
 
         #pour chaque projet récupérer les analyses à lancer qui sont en statut1
         #updaté leur statut en 2 pour ne pas les récupérer au procahin tour de cron
         #récupérer bed + BILANSAMPLE
         #~/gsutil/gsutil cp gs://skywalker-v2-rawdata/${project}/BILAN_SAMPLES_*_${NAME_ANALYSIS}.txt ${PATH_PROJECT_DIR}/${project}/
-        gsutil cp gs://skywalker-v2-rawdata/${project}/BILAN_SAMPLES_${project}.txt ${PATH_PROJECT_DIR}/${project}/
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Fetching BILAN_SAMPLES from skywalker-v2-rawdata"
+        gsutil cp gs://skywalker-v2-rawdata/${project}/BILAN_SAMPLES_${project}.txt ${PATH_PROJECT_DIR}/${project}/ || echo "$(date --rfc-3339=ns) |ALEX_ERROR| Bilan fetch fail"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Fetched BILAN_SAMPLES from skywalker-v2-rawdata"
 
         if [ ! -f ${PATH_PROJECT_DIR}/${project}/BILAN_SAMPLES.txt ] ; then
             head -1 ${PATH_PROJECT_DIR}/${project}/BILAN_SAMPLES_${project}.txt > ${PATH_PROJECT_DIR}/${project}/BILAN_SAMPLES.txt
@@ -45,22 +50,29 @@ if [[ "$PROJECTS" != "" ]]; then
         coluser=`cat ${PATH_PROJECT_DIR}/$project/BILAN_SAMPLES.txt | head -1 | tr "\t" "\n" | grep -n USER | cut -f1 -d ":"`
         provider=`cat ${PATH_PROJECT_DIR}/$project/BILAN_SAMPLES.txt | cut -f$coluser | grep -v USER | sort | uniq | sed "s/integragen//g" | sed "s/,//g"`
 
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| colkit = $colkit ; KIT = $KIT ; colgenome = $colgenome ; coluser = $coluser ; provider = $provider"
 
         # créer le kit hg38 si besoin et surtout copie le nouveau kit dans le bucket
-        bash $PATH_SCRIPT_DIR/UTILITIES/create_kit_files.sh  ${project} $KIT $genome $provider SIRIUS X ${PATH_SCRIPT_DIR}
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Begin create_kit_files.sh"
+        bash $PATH_SCRIPT_DIR/UTILITIES/create_kit_files.sh  ${project} $KIT $genome $provider SIRIUS X ${PATH_SCRIPT_DIR} || echo "$(date --rfc-3339=ns) |ALEX_ERROR| create_kit_files.sh fail"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| End create_kit_files.sh"
 
         ##updater le statut de l'analyse en 2 poru dire analyse In Progress
-        ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/bin/console app:update-statut-projet '${project}' '2'"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Begin Status Update to 2"
+        ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/bin/console app:update-statut-projet '${project}' '2'" || echo "$(date --rfc-3339=ns) |ALEX_ERROR| Status 2 Fail"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| End Status Update to 2"
         ##updater le nom du comercial pour le projet en question
-        ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/bin/console app:update-email-commercial '${project}' 'jeanmarc.robitaille@integragen.com'"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Begin Commercial name update"
+        ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/bin/console app:update-email-commercial '${project}' 'jeanmarc.robitaille@integragen.com'" || echo "$(date --rfc-3339=ns) |ALEX_ERROR| Comemrcial name fail"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| End Commercial name update"
 
         #####Faire le lien entre eris3 et le pwd pour que le lien du Reporting existe
         #php bin/console app:update-password-reporting ${project} motDePasseReporting fromPipeline
-        bash $PATH_SCRIPT_DIR/1.2.Implementation_Project/LaunchInmplementation_CLOUD_Ext.sh $project $PATH_SCRIPT_DIR UE $PATH_SCRIPT_SKYWALKER
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| Begin LaunchInmplementation_CLOUD_Ext.sh"
+        bash $PATH_SCRIPT_DIR/1.2.Implementation_Project/LaunchInmplementation_CLOUD_Ext.sh $project $PATH_SCRIPT_DIR UE $PATH_SCRIPT_SKYWALKER || echo "$(date --rfc-3339=ns) |ALEX_ERROR| LaunchImplementation_CLOUD_Ext.sh fail"
+        echo "$(date --rfc-3339=ns) |ALEX_INFO| End LaunchInmplementation_CLOUD_Ext.sh"
     done
-    echo "All Projects processed."
+    echo "$(date --rfc-3339=ns) | All Projects processed."
 else
-    echo "No projects got from Sirius"
+    echo "$(date --rfc-3339=ns) | No projects got from Sirius"
 fi
-
-
