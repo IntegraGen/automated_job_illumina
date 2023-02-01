@@ -41,6 +41,7 @@ PROJECTS=`echo $Informations | tr "{" "\n" | grep "\"status\":1" | cut -f 1 -d "
 if [[ "$PROJECTS" != "" ]]; then
     echo "  All theses projects were got from Mercury: $PROJECTS"
     kits=""
+    PROJECTS="5_C2 100_C2 1d25_C2"
     for project in $PROJECTS
     do
         echo $project
@@ -89,8 +90,14 @@ if [[ "$PROJECTS" != "" ]]; then
     ##Inserer le kit de capture au besoin, s il n existe pas
     if ! echo "$kits" | grep -q -w $KIT 
     then  
-        bash $PATH_SCRIPT_DIR/UTILITIES/create_kit_files.sh ${project} $KIT $genome_kit $provider MERCURY X ${PATH_SCRIPT_DIR}
-        kits=$( echo "$kits $KIT" )
+        if gsutil ls gs://skywalker-v2-rawdata/${PATIENT_ID}/BED/${KIT}.bed 
+            then
+            echo "bash $PATH_SCRIPT_DIR/UTILITIES/create_kit_files.sh ${project} $KIT $genome_kit $provider MERCURY X ${PATH_SCRIPT_DIR}"
+            kits=$( echo "$kits $KIT" )
+        else 
+            echo "pas le bed du kit sur gs://skywalker-v2-rawdata/${PATIENT_ID}/BED/" 
+        fi
+       
     fi
 
     bash $PATH_SCRIPT_DIR/1.2.Implementation_Project/LaunchInmplementation_CLOUD_Ext.sh $project $PATH_SCRIPT_DIR UE $PATH_SCRIPT_SKYWALKER
