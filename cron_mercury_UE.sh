@@ -40,6 +40,8 @@ Informations="$(curl -s -X GET \
 PROJECTS=`echo $Informations | tr "{" "\n" | grep "\"status\":1" | cut -f 1 -d "," | sort | uniq | cut -f2 -d ":" |sed 's/"//g' `
 if [[ "$PROJECTS" != "" ]]; then
     echo "  All theses projects were got from Mercury: $PROJECTS"
+    kits=""
+    PROJECTS="5_C2 100_C2 1d25_C2"
     for project in $PROJECTS
     do
         echo $project
@@ -65,7 +67,7 @@ if [[ "$PROJECTS" != "" ]]; then
 
             #bash $PATH_SCRIPT_DIR/4.3.MERCURY/Update_status_analysis_Mercury_VEP101.sh $project $PATIENT_ID $NAME_ANALYSIS 2 $PATH_SCRIPT_DIR
 
-    done
+        done
 
 
     #check si kit existe dans bioinfstory et si non on l'insère
@@ -80,9 +82,23 @@ if [[ "$PROJECTS" != "" ]]; then
 
     coluser=`cat ${PATH_PROJECT_DIR}/$project/BILAN_SAMPLES.txt | head -1 | tr "\t" "\n" | grep -n USER | cut -f1 -d ":"`
     provider=`cat ${PATH_PROJECT_DIR}/$project/BILAN_SAMPLES.txt | cut -f$coluser | grep -v USER | sort | uniq | sed "s/integragen//g" | sed "s/,//g"`
+    
+    
+    
+
 
     ##Inserer le kit de capture au besoin, s il n existe pas
-    bash $PATH_SCRIPT_DIR/UTILITIES/create_kit_files.sh ${project} $KIT $genome_kit $provider MERCURY X ${PATH_SCRIPT_DIR}
+    if ! echo "$kits" | grep -q -w $KIT 
+    then  
+        if gsutil ls gs://skywalker-v2-rawdata/${PATIENT_ID}/BED/${KIT}.bed 
+            then
+            echo "bash $PATH_SCRIPT_DIR/UTILITIES/create_kit_files.sh ${project} $KIT $genome_kit $provider MERCURY X ${PATH_SCRIPT_DIR}"
+            kits=$( echo "$kits $KIT" )
+        else 
+            echo "pas le bed du kit sur gs://skywalker-v2-rawdata/${PATIENT_ID}/BED/" 
+        fi
+       
+    fi
 
     bash $PATH_SCRIPT_DIR/1.2.Implementation_Project/LaunchInmplementation_CLOUD_Ext.sh $project $PATH_SCRIPT_DIR UE $PATH_SCRIPT_SKYWALKER
     bash $PATH_SCRIPT_DIR/4.3.MERCURY/Update_status_analysis_Mercury_VEP101.sh $project $PATIENT_ID $NAME_ANALYSIS 2 $PATH_SCRIPT_DIR
