@@ -1,5 +1,4 @@
-#00 */8 * * * bash /illumina/scripts/automated_job_illumina/cron_sirius_UE.sh >> /illumina/scripts/automated_job_illumina/logs/log_cron_sirius_ext.txt 2>&1
 00 */2 * * * bash /illumina/scripts/automated_job_illumina/cron_mercury_UE.sh >> /illumina/scripts/automated_job_illumina/logs/log_cron_mercury_ext.txt 2>&1
 21 * * * * /usr/bin/flock -n /illumina/scripts/GCP_Demultiplex/gcp_dmx_rsync.lockfile /illumina/scripts/GCP_Demultiplex/copy.sh >> /illumina/scripts/GCP_Demultiplex/copy.log 2>&1
-00 */8 * * * bash /illumina/scripts/automated_job_illumina/cron_sirius_new.sh >> /illumina/scripts/automated_job_illumina/logs/log_cron_sirius_new_ext.txt 2>&1
+00 */8 * * * bash /illumina/scripts/automated_job_illumina/cron_sirius_UE.sh >> /illumina/scripts/automated_job_illumina/logs/log_cron_sirius_ext.txt 2>&1
 00 17 * * SUN bash /illumina/scripts/automated_job_illumina/cron_cleaning_Project_Finis.sh >> /illumina/scripts/automated_job_illumina/logs/log_cron_cleaning_Project_Finis.txt 2>&1
