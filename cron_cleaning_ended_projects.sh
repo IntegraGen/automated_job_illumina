@@ -17,6 +17,7 @@ echo "$(date --rfc-3339=ns) |BENE_INFO| End ARCHIVE clean_Projects_category.sh"
 ## CLINIQ, Oscar samples
 echo "$(date --rfc-3339=ns) |BENE_INFO| CLINIC retrieval from Project_Finis"
 for protocol in $(echo $sortedprotos | tr "," "\t"); do
+    if [[ -n $(echo $protocol | grep ^HP) ]]; then continue; fi  # to see them in Project_Finis and send a Debre reminder email
     # retrieve Orbit Direct cleaned folders
     bash ${PATH_SCRIPT_DIR}/move_keywordprojects_into_destination.sh ^${protocol} /illumina/Projects/Project_Finis_CLINIQ/ /illumina/Projects/Project_Finis/
 done
