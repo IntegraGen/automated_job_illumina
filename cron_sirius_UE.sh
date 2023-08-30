@@ -20,7 +20,7 @@ PROJECTS=$(echo "$Informations" | jq -r '.[0] | .nom') || echo "$(date --rfc-333
 echo "$(date --rfc-3339=ns) |ALEX_INFO| PROJECTS = $PROJECTS" ;
 if [[ "$PROJECTS" != "" ]]; then 
     echo "$(date --rfc-3339=ns) | All theses projects were got from Sirius: $PROJECTS" ;
-    #for project in $PROJECTS
+   #for project in $PROJECTS
     for project in "${PROJECTS[0]}" ;
     do
         echo "$(date --rfc-3339=ns) | Working on $project ..." ;

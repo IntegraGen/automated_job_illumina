@@ -37,11 +37,11 @@ Informations="$(curl -s -X GET \
 
 #récupérer les projets à lancer  avec le statut 1: fastq uploaded
 
-PROJECTS=`echo $Informations | tr "{" "\n" | grep "\"status\":1" | cut -f 1 -d "," | sort | uniq | cut -f2 -d ":" |sed 's/"//g' `
+PROJECTS=`echo $Informations | tr "{" "\n" | grep "\"status\":1" | grep -v OncoDEEP_kit |  cut -f 1 -d "," | sort | uniq | cut -f2 -d ":" |sed 's/"//g' `
 if [[ "$PROJECTS" != "" ]]; then
     echo "  All theses projects were got from Mercury: $PROJECTS"
     kits=""
-    PROJECTS="5_C2 100_C2 1d25_C2"
+    #ROJECTS="T1006 T1021"
     for project in $PROJECTS
     do
         echo $project

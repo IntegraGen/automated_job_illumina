@@ -1,0 +1,1633 @@
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-07-16 17:00:02.101491250+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230716.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230716.txt 
+
+Starting cleaning at: 	 Sun Jul 16 17:00:02 CEST 2023
+Folder age is set to 90 days.
+=== PJ2111472-TranAnDDi-TWIGExoSpikeV2-SA_PJ2111472_6.1 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2111472-TranAnDDi-TWIGExoSpikeV2-SA_PJ2111472_6.1//*.tsv: No such file or directory
+=== PJ2112513-Peixoto-mRNA-human-SA_PJ2112513 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2112513-Peixoto-mRNA-human-SA_PJ2112513//*.tsv: No such file or directory
+=== PJ2202067-C2i-Noise-model-CfDNA-Whole-Genome-SA_PJ2202067_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2202067-C2i-Noise-model-CfDNA-Whole-Genome-SA_PJ2202067_2//*.tsv: No such file or directory
+=== PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_2//*.tsv: No such file or directory
+=== PJ2301019-Fragnoud-WG-2x100-SA_PJ2301019_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2301019-Fragnoud-WG-2x100-SA_PJ2301019_2//*.tsv: No such file or directory
+=== PJ2302034-Marques-Seq-Only-10X-Visium-SA_PJ2302034 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302034-Marques-Seq-Only-10X-Visium-SA_PJ2302034//*.tsv: No such file or directory
+=== PJ2302037-Dupe-3primeRNA-SA_PJ2302037 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302037-Dupe-3primeRNA-SA_PJ2302037//*.tsv: No such file or directory
+Operations finished.
+2023-07-16 17:00:29.873496204+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-07-16 17:00:29.875519231+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^HP in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-07-16 17:00:30.079636397+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230716.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230716.txt 
+
+Starting cleaning at: 	 Sun Jul 16 17:00:30 CEST 2023
+Folder age is set to 35 days.
+Operations finished.
+2023-07-16 17:00:30.258701752+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-07-16 17:00:30.260685941+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230716.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230716.txt 
+
+Starting cleaning at: 	 Sun Jul 16 17:00:30 CEST 2023
+Folder age is set to 45 days.
+Operations finished.
+2023-07-16 17:00:30.571073052+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-07-16 17:00:30.572840145+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 956370 ("Transfer_ARCHIVE") has been submitted
+2023-07-16 17:00:30.631756818+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-07-16 17:00:30.633673600+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 956371 ("Transfer_CLINIQ") has been submitted
+2023-07-16 17:00:30.672365183+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-07-16 17:00:30.674084054+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 956372 ("Transfer_EXT") has been submitted
+2023-07-16 17:00:30.715771561+02:00 |BENE_INFO| End EXT_transfer.sh
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-07-23 17:00:01.386360883+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230723.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230723.txt 
+
+Starting cleaning at: 	 Sun Jul 23 17:00:01 CEST 2023
+Folder age is set to 90 days.
+=== PJ2202050-Letouze-Whole-Genome_PJ2202050_2 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 149 Jul  8  2022 /illumina/Projects/ARCHIVE//PJ2202050-Letouze-Whole-Genome_PJ2202050_2//PJ2202050_01-0287_complet.tsv
+GCP for PJ2202050_01-0287_complet
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2207275-Vitobello-mRNANEB-SA_PJ2207275 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2207275-Vitobello-mRNANEB-SA_PJ2207275//*.tsv: No such file or directory
+=== PJ2212453-Martel-TWIGExoSpikeV2-SA_PJ2212453 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2212453-Martel-TWIGExoSpikeV2-SA_PJ2212453//*.tsv: No such file or directory
+=== PJ2212478-Chaulot-Seq-Only-RRBS-SA_PJ2212478_3 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2212478-Chaulot-Seq-Only-RRBS-SA_PJ2212478_3//*.tsv: No such file or directory
+=== PJ2302044-Heddar-TWIGExoSpikeV2_PJ2302044 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 241 Mar  7 16:45 /illumina/Projects/ARCHIVE//PJ2302044-Heddar-TWIGExoSpikeV2_PJ2302044//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 326 Mar  7 16:44 /illumina/Projects/ARCHIVE//PJ2302044-Heddar-TWIGExoSpikeV2_PJ2302044//PJ2302044_Batch-1.tsv
+GCP for PJ2302044
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2302048-Safraou-TWIGExoSpikeV2-SA_PJ2302048 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302048-Safraou-TWIGExoSpikeV2-SA_PJ2302048//*.tsv: No such file or directory
+=== PJ2302050-Heddar-TWIGExoSpikeV2_PJ2302050 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 121 Mar  7 16:15 /illumina/Projects/ARCHIVE//PJ2302050-Heddar-TWIGExoSpikeV2_PJ2302050//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 146 Mar  7 16:12 /illumina/Projects/ARCHIVE//PJ2302050-Heddar-TWIGExoSpikeV2_PJ2302050//PJ2302050_Batch-1.tsv
+GCP for PJ2302050
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+Operations finished.
+2023-07-23 17:00:48.918983659+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-07-23 17:00:48.920661353+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^HP in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier RARE_374_RARE_374: moved.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-07-23 17:00:49.143909691+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230723.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230723.txt 
+
+Starting cleaning at: 	 Sun Jul 23 17:00:49 CEST 2023
+Folder age is set to 35 days.
+=== BIOMEDE2_036_BIOMEDE2_036 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 150 Jun 12 18:52 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_036_BIOMEDE2_036//BIOMEDE2_036.tsv
+GCP for BIOMEDE2_036
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== BIOMEDE2_042_BIOMEDE2_042 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 142 Jun 12 13:38 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_042_BIOMEDE2_042//BIOMEDE2_042.tsv
+GCP for BIOMEDE2_042
+gs://skywalker-v2-rawdata/BIOMEDE2_042/ saved.
+gs://skywalker-v2-analyses/BIOMEDE2_042/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-07-23 17:01:55.369750798+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-07-23 17:01:55.371485256+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230723.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230723.txt 
+
+Starting cleaning at: 	 Sun Jul 23 17:01:55 CEST 2023
+Folder age is set to 45 days.
+=== PJ230606_R181_2149 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 91 Jun  6 14:22 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_2149//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 86 Jun  6 14:20 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_2149//PJ230606_R181_2149_Batch-1.tsv
+GCP for PJ230606_R181_2149
+gs://skywalker-v2-rawdata/PJ230606_R181_2149/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_2149/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-07-23 17:02:46.034682191+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-07-23 17:02:46.036573972+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 958367 ("Transfer_ARCHIVE") has been submitted
+2023-07-23 17:02:46.105237041+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-07-23 17:02:46.107071764+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 958368 ("Transfer_CLINIQ") has been submitted
+2023-07-23 17:02:46.139998415+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-07-23 17:02:46.141857867+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 958369 ("Transfer_EXT") has been submitted
+2023-07-23 17:02:46.192201738+02:00 |BENE_INFO| End EXT_transfer.sh
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-07-30 17:00:02.142841427+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230730.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230730.txt 
+
+Starting cleaning at: 	 Sun Jul 30 17:00:02 CEST 2023
+Folder age is set to 90 days.
+=== PJ2111491-COVIDVAC-Seq-Only-S4-200-SA_PJ2111491_4 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2111491-COVIDVAC-Seq-Only-S4-200-SA_PJ2111491_4//*.tsv: No such file or directory
+=== PJ2111491-COVIDVAC-Seq-Only-S4-200-SA_PJ2111491_5 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2111491-COVIDVAC-Seq-Only-S4-200-SA_PJ2111491_5//*.tsv: No such file or directory
+=== PJ2202039-Tran-TWIGExoSpikeV2-prenatome-SA_PJ2202039_21 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2202039-Tran-TWIGExoSpikeV2-prenatome-SA_PJ2202039_21//*.tsv: No such file or directory
+=== PJ2206233-Unicancer-C2i-Whole-Genome-SA_PJ2206233_3 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2206233-Unicancer-C2i-Whole-Genome-SA_PJ2206233_3//*.tsv: No such file or directory
+=== PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_6 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_6//*.tsv: No such file or directory
+=== PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_7 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_7//*.tsv: No such file or directory
+=== PJ2212479-Martineau-mRNANEB-SA_PJ2212479 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2212479-Martineau-mRNANEB-SA_PJ2212479//*.tsv: No such file or directory
+=== PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_3 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_3//*.tsv: No such file or directory
+=== PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_4 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_4//*.tsv: No such file or directory
+=== PJ2302054-Duffourd-TWIGExoSpikeV2-SA_PJ2302054 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302054-Duffourd-TWIGExoSpikeV2-SA_PJ2302054//*.tsv: No such file or directory
+=== PJ2302055-Chalmel-Seq-Only-10X-GenX-SA_PJ2302055 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302055-Chalmel-Seq-Only-10X-GenX-SA_PJ2302055//*.tsv: No such file or directory
+=== PJ2302060-Castel-TotalRNANEB-SA_PJ2302060 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302060-Castel-TotalRNANEB-SA_PJ2302060//*.tsv: No such file or directory
+=== PJ2303063-Safraou-TWIGExoSpikeV2-SA_PJ2303063 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303063-Safraou-TWIGExoSpikeV2-SA_PJ2303063//*.tsv: No such file or directory
+=== PJ2303073-Castel-Seq-Only-SA_PJ2303073 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303073-Castel-Seq-Only-SA_PJ2303073//*.tsv: No such file or directory
+Operations finished.
+2023-07-30 17:01:09.932367040+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-07-30 17:01:09.934074380+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier BIOMEDE2_050_BIOMEDE2_050: moved.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-07-30 17:01:10.541203352+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230730.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230730.txt 
+
+Starting cleaning at: 	 Sun Jul 30 17:01:10 CEST 2023
+Folder age is set to 35 days.
+Operations finished.
+2023-07-30 17:01:10.808446911+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-07-30 17:01:10.810088551+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230730.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230730.txt 
+
+Starting cleaning at: 	 Sun Jul 30 17:01:10 CEST 2023
+Folder age is set to 45 days.
+=== PJ230606_R181_3434 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 102 Jun  7 12:03 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3434//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser  97 Jun  7 02:44 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3434//PJ230606_R181_3434_Batch-1.tsv
+GCP for PJ230606_R181_3434
+gs://skywalker-v2-rawdata/PJ230606_R181_3434/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_3434/ saved.
+=== PJ230606_R181_3441 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun  7 12:02 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3441//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun  6 18:43 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3441//PJ230606_R181_3441_Batch-1.tsv
+GCP for PJ230606_R181_3441
+gs://skywalker-v2-rawdata/PJ230606_R181_3441/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_3441/ saved.
+=== PJ230606_R181_3467 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 70 Jun  7 12:03 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3467//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 65 Jun  7 10:44 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3467//PJ230606_R181_3467_Batch-1.tsv
+GCP for PJ230606_R181_3467
+gs://skywalker-v2-rawdata/PJ230606_R181_3467/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_3467/ saved.
+=== PJ230606_R181_3468 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun  7 21:20 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3468//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun  7 18:44 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3468//PJ230606_R181_3468_Batch-1.tsv
+GCP for PJ230606_R181_3468
+gs://skywalker-v2-rawdata/PJ230606_R181_3468/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_3468/ saved.
+=== PJ230606_R181_3469 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun  8 11:28 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3469//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun  8 02:44 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3469//PJ230606_R181_3469_Batch-1.tsv
+GCP for PJ230606_R181_3469
+gs://skywalker-v2-rawdata/PJ230606_R181_3469/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_3469/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-07-30 17:05:13.476222487+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-07-30 17:05:13.478295352+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 958952 ("Transfer_ARCHIVE") has been submitted
+2023-07-30 17:05:13.553351334+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-07-30 17:05:13.555171629+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 958953 ("Transfer_CLINIQ") has been submitted
+2023-07-30 17:05:13.636877433+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-07-30 17:05:13.638714120+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 958954 ("Transfer_EXT") has been submitted
+2023-07-30 17:05:13.710063223+02:00 |BENE_INFO| End EXT_transfer.sh
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-08-06 17:00:01.990615297+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230806.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230806.txt 
+
+Starting cleaning at: 	 Sun Aug 6 17:00:02 CEST 2023
+Folder age is set to 90 days.
+=== PJ2203097-Bhatnagar-SingleCell10X_PJ2203097_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2203097-Bhatnagar-SingleCell10X_PJ2203097_2//*.tsv: No such file or directory
+=== PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_5 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2301013-Chaulot-Seq-Only-SA_PJ2301013_5//*.tsv: No such file or directory
+=== PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T01.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T02.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T03.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T04.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T05.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T06.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T07.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 91 Mar 24 15:49 /illumina/Projects/ARCHIVE//PJ2302033-Thierry-TWIGExoSpikeV2-Human-FFPE_PJ2302033//T08.tsv
+GCP for T01
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T02
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T03
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T04
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T05
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T06
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T07
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for T08
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2302045-Chalmel-Seq-Only-10X-Multiome-SA_PJ2302045 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302045-Chalmel-Seq-Only-10X-Multiome-SA_PJ2302045//*.tsv: No such file or directory
+=== PJ2302046-Riou-Murin-Exome-TWIST-SA_PJ2302046 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302046-Riou-Murin-Exome-TWIST-SA_PJ2302046//*.tsv: No such file or directory
+=== PJ2302056-Pire-10X-SingleNuclei-SA_PJ2302056 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302056-Pire-10X-SingleNuclei-SA_PJ2302056//*.tsv: No such file or directory
+=== PJ2303063-Safraou-TWIGExoSpikeV2-SA_PJ2303063_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303063-Safraou-TWIGExoSpikeV2-SA_PJ2303063_2//*.tsv: No such file or directory
+=== PJ2303097-Riou-Murin-Exome-TWIST-SA_PJ2303097 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303097-Riou-Murin-Exome-TWIST-SA_PJ2303097//*.tsv: No such file or directory
+Operations finished.
+2023-08-06 17:02:14.031235574+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-08-06 17:02:14.032967897+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier BIOMEDE2_036_BIOMEDE2_036: moved.
+dossier BIOMEDE2_049_BIOMEDE2_049: moved.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-08-06 17:02:14.368232476+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230806.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230806.txt 
+
+Starting cleaning at: 	 Sun Aug 6 17:02:14 CEST 2023
+Folder age is set to 35 days.
+=== BIOMEDE2_041_BIOMEDE2_041 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 142 Jun 26 14:48 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_041_BIOMEDE2_041//BIOMEDE2_041.tsv
+GCP for BIOMEDE2_041
+gs://skywalker-v2-rawdata/BIOMEDE2_041/ saved.
+gs://skywalker-v2-analyses/BIOMEDE2_041/ saved.
+=== BIOMEDE2_044_BIOMEDE2_044 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 142 Jun 26 12:51 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_044_BIOMEDE2_044//BIOMEDE2_044.tsv
+GCP for BIOMEDE2_044
+gs://skywalker-v2-rawdata/BIOMEDE2_044/ saved.
+gs://skywalker-v2-analyses/BIOMEDE2_044/ saved.
+=== BIOMEDE2_045_BIOMEDE2_045 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 126 Jun 26 14:34 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_045_BIOMEDE2_045//BIOMEDE2_045.tsv
+GCP for BIOMEDE2_045
+gs://skywalker-v2-rawdata/BIOMEDE2_045/ saved.
+gs://skywalker-v2-analyses/BIOMEDE2_045/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-06 17:06:05.519452914+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-08-06 17:06:05.521257289+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230806.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230806.txt 
+
+Starting cleaning at: 	 Sun Aug 6 17:06:05 CEST 2023
+Folder age is set to 45 days.
+=== PJ230606_R181_3090 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun  8 11:28 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3090//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun  8 10:44 /illumina/Projects/Project_Finis_EXT//PJ230606_R181_3090//PJ230606_R181_3090_Batch-1.tsv
+GCP for PJ230606_R181_3090
+gs://skywalker-v2-rawdata/PJ230606_R181_3090/ saved.
+gs://skywalker-v2-analyses/PJ230606_R181_3090/ saved.
+=== PJ230613_R182_1826 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jun 14 11:40 /illumina/Projects/Project_Finis_EXT//PJ230613_R182_1826//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jun 14 02:45 /illumina/Projects/Project_Finis_EXT//PJ230613_R182_1826//PJ230613_R182_1826_Batch-1.tsv
+GCP for PJ230613_R182_1826
+gs://skywalker-v2-rawdata/PJ230613_R182_1826/ saved.
+gs://skywalker-v2-analyses/PJ230613_R182_1826/ saved.
+=== PJ230614_R182_3476 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 70 Jun 15 11:26 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3476//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 65 Jun 14 18:45 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3476//PJ230614_R182_3476_Batch-1.tsv
+GCP for PJ230614_R182_3476
+gs://skywalker-v2-rawdata/PJ230614_R182_3476/ saved.
+gs://skywalker-v2-analyses/PJ230614_R182_3476/ saved.
+=== PJ230614_R182_3477 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 70 Jun 15 11:27 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3477//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 65 Jun 15 02:45 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3477//PJ230614_R182_3477_Batch-1.tsv
+GCP for PJ230614_R182_3477
+gs://skywalker-v2-rawdata/PJ230614_R182_3477/ saved.
+gs://skywalker-v2-analyses/PJ230614_R182_3477/ saved.
+=== PJ230614_R182_3478 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun 15 11:27 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3478//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun 15 10:45 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3478//PJ230614_R182_3478_Batch-1.tsv
+GCP for PJ230614_R182_3478
+gs://skywalker-v2-rawdata/PJ230614_R182_3478/ saved.
+gs://skywalker-v2-analyses/PJ230614_R182_3478/ saved.
+=== PJ230614_R182_3479 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 71 Jun 16 12:08 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3479//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 66 Jun 15 18:45 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3479//PJ230614_R182_3479_Batch-1.tsv
+GCP for PJ230614_R182_3479
+gs://skywalker-v2-rawdata/PJ230614_R182_3479/ saved.
+gs://skywalker-v2-analyses/PJ230614_R182_3479/ saved.
+=== PJ230614_R182_3480 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 71 Jun 16 12:08 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3480//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 66 Jun 16 02:45 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3480//PJ230614_R182_3480_Batch-1.tsv
+GCP for PJ230614_R182_3480
+gs://skywalker-v2-rawdata/PJ230614_R182_3480/ saved.
+gs://skywalker-v2-analyses/PJ230614_R182_3480/ saved.
+=== PJ230614_R182_3481 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 71 Jun 16 12:09 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3481//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 66 Jun 16 10:45 /illumina/Projects/Project_Finis_EXT//PJ230614_R182_3481//PJ230614_R182_3481_Batch-1.tsv
+GCP for PJ230614_R182_3481
+gs://skywalker-v2-rawdata/PJ230614_R182_3481/ saved.
+gs://skywalker-v2-analyses/PJ230614_R182_3481/ saved.
+=== PJ230616_R183_2301 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jun 19 14:23 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_2301//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jun 16 18:45 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_2301//PJ230616_R183_2301_Batch-1.tsv
+GCP for PJ230616_R183_2301
+gs://skywalker-v2-rawdata/PJ230616_R183_2301/ saved.
+gs://skywalker-v2-analyses/PJ230616_R183_2301/ saved.
+=== PJ230616_R183_2945 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 80 Jun 19 14:24 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_2945//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 75 Jun 17 10:45 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_2945//PJ230616_R183_2945_Batch-1.tsv
+GCP for PJ230616_R183_2945
+gs://skywalker-v2-rawdata/PJ230616_R183_2945/ saved.
+gs://skywalker-v2-analyses/PJ230616_R183_2945/ saved.
+=== PJ230616_R183_3054 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jun 19 22:42 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_3054//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jun 19 18:46 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_3054//PJ230616_R183_3054_Batch-1.tsv
+GCP for PJ230616_R183_3054
+gs://skywalker-v2-rawdata/PJ230616_R183_3054/ saved.
+gs://skywalker-v2-analyses/PJ230616_R183_3054/ saved.
+=== PJ230616_R183_3387 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 93 Jun 19 14:23 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_3387//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 88 Jun 17 02:45 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_3387//PJ230616_R183_3387_Batch-1.tsv
+GCP for PJ230616_R183_3387
+gs://skywalker-v2-rawdata/PJ230616_R183_3387/ saved.
+gs://skywalker-v2-analyses/PJ230616_R183_3387/ saved.
+=== PJ230616_R183_3493 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 70 Jun 19 14:24 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_3493//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 65 Jun 17 18:45 /illumina/Projects/Project_Finis_EXT//PJ230616_R183_3493//PJ230616_R183_3493_Batch-1.tsv
+GCP for PJ230616_R183_3493
+gs://skywalker-v2-rawdata/PJ230616_R183_3493/ saved.
+gs://skywalker-v2-analyses/PJ230616_R183_3493/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-06 17:15:38.496285093+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-08-06 17:15:38.498121239+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 960947 ("Transfer_ARCHIVE") has been submitted
+2023-08-06 17:15:38.567225160+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-08-06 17:15:38.568964904+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 960948 ("Transfer_CLINIQ") has been submitted
+2023-08-06 17:15:38.601954619+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-08-06 17:15:38.603628971+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 960949 ("Transfer_EXT") has been submitted
+2023-08-06 17:15:38.648559663+02:00 |BENE_INFO| End EXT_transfer.sh
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-08-13 17:00:01.485876968+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230813.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230813.txt 
+
+Starting cleaning at: 	 Sun Aug 13 17:00:01 CEST 2023
+Folder age is set to 90 days.
+=== PJ2206233-Unicancer-C2i-Whole-Genome-SA_PJ2206233 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2206233-Unicancer-C2i-Whole-Genome-SA_PJ2206233//*.tsv: No such file or directory
+=== PJ2206233-Unicancer-C2i-Whole-Genome-SA_PJ2206233_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2206233-Unicancer-C2i-Whole-Genome-SA_PJ2206233_2//*.tsv: No such file or directory
+=== PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_5 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_5//*.tsv: No such file or directory
+=== PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_8 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_8//*.tsv: No such file or directory
+=== PJ2212452-Sassi-TWIGExoSpikeV2-FFPE_PJ2212452 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 134 Apr  6 11:41 /illumina/Projects/ARCHIVE//PJ2212452-Sassi-TWIGExoSpikeV2-FFPE_PJ2212452//RARE_340.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 134 Apr  6 11:41 /illumina/Projects/ARCHIVE//PJ2212452-Sassi-TWIGExoSpikeV2-FFPE_PJ2212452//RARE_343.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 134 Apr  6 11:41 /illumina/Projects/ARCHIVE//PJ2212452-Sassi-TWIGExoSpikeV2-FFPE_PJ2212452//RARE_346.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 134 Apr  6 11:41 /illumina/Projects/ARCHIVE//PJ2212452-Sassi-TWIGExoSpikeV2-FFPE_PJ2212452//RARE_348.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 134 Apr  6 11:41 /illumina/Projects/ARCHIVE//PJ2212452-Sassi-TWIGExoSpikeV2-FFPE_PJ2212452//RARE_350.tsv
+GCP for RARE_340
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for RARE_343
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for RARE_346
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for RARE_348
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for RARE_350
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2302058-Pire-WG-PCR-free_PJ2302058 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 115 Mar 15 14:59 /illumina/Projects/ARCHIVE//PJ2302058-Pire-WG-PCR-free_PJ2302058//CHC4001.tsv
+GCP for CHC4001
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2303063-Safraou-TWIGExoSpikeV2-SA_PJ2303063_3 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303063-Safraou-TWIGExoSpikeV2-SA_PJ2303063_3//*.tsv: No such file or directory
+=== PJ2303077-Darde-Seq-Only-BRB-seq-SA_PJ2303077 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303077-Darde-Seq-Only-BRB-seq-SA_PJ2303077//*.tsv: No such file or directory
+=== PJ2303079-Darde-Seq-Only-BRB-seq-SA_PJ2303079 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303079-Darde-Seq-Only-BRB-seq-SA_PJ2303079//*.tsv: No such file or directory
+=== PJ2303105-Molaro-Seq-Only-10X-SA_PJ2303105 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303105-Molaro-Seq-Only-10X-SA_PJ2303105//*.tsv: No such file or directory
+Operations finished.
+2023-08-13 17:00:56.640303401+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-08-13 17:00:56.641872558+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier RARE_375_RARE_375: moved.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier AIRIC_6192-J42_AIRIC_6192-J42: moved.
+dossier AIRIC_6203-J1_AIRIC_6203-J1: moved.
+dossier AIRIC_6218-J1_AIRIC_6218-J1: moved.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-08-13 17:00:56.908208899+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230813.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230813.txt 
+
+Starting cleaning at: 	 Sun Aug 13 17:00:56 CEST 2023
+Folder age is set to 35 days.
+=== RARE_372_RARE_372 ===
+Cleaning local folder...
+-rwxrwxrwx 1 sbsuser sbsuser 112 Jun 29 18:54 /illumina/Projects/Project_Finis_CLINIQ//RARE_372_RARE_372//RARE_372.tsv
+GCP for RARE_372
+gs://skywalker-v2-rawdata/RARE_372/ saved.
+gs://skywalker-v2-analyses/RARE_372/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-13 17:02:24.050441699+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-08-13 17:02:24.052013079+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230813.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230813.txt 
+
+Starting cleaning at: 	 Sun Aug 13 17:02:24 CEST 2023
+Folder age is set to 45 days.
+=== PJ230622_RELECT_3509 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 93 Jun 23 00:30 /illumina/Projects/Project_Finis_EXT//PJ230622_RELECT_3509//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 88 Jun 22 18:46 /illumina/Projects/Project_Finis_EXT//PJ230622_RELECT_3509//PJ230622_RELECT_3509_Batch-1.tsv
+GCP for PJ230622_RELECT_3509
+gs://skywalker-v2-rawdata/PJ230622_RELECT_3509/ saved.
+gs://skywalker-v2-analyses/PJ230622_RELECT_3509/ saved.
+=== PJ230623_R184_1711 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jun 26 11:59 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_1711//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jun 23 18:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_1711//PJ230623_R184_1711_Batch-1.tsv
+GCP for PJ230623_R184_1711
+gs://skywalker-v2-rawdata/PJ230623_R184_1711/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_1711/ saved.
+=== PJ230623_R184_2174 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jun 27 11:53 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_2174//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jun 26 18:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_2174//PJ230623_R184_2174_Batch-1.tsv
+GCP for PJ230623_R184_2174
+gs://skywalker-v2-rawdata/PJ230623_R184_2174/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_2174/ saved.
+=== PJ230623_R184_3466 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 82 Jun 27 11:54 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3466//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 77 Jun 27 02:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3466//PJ230623_R184_3466_Batch-1.tsv
+GCP for PJ230623_R184_3466
+gs://skywalker-v2-rawdata/PJ230623_R184_3466/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_3466/ saved.
+=== PJ230623_R184_3489 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 71 Jun 26 12:01 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3489//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 66 Jun 24 02:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3489//PJ230623_R184_3489_Batch-1.tsv
+GCP for PJ230623_R184_3489
+gs://skywalker-v2-rawdata/PJ230623_R184_3489/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_3489/ saved.
+=== PJ230623_R184_3490 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun 26 12:02 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3490//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun 24 10:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3490//PJ230623_R184_3490_Batch-1.tsv
+GCP for PJ230623_R184_3490
+gs://skywalker-v2-rawdata/PJ230623_R184_3490/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_3490/ saved.
+=== PJ230623_R184_3491 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun 26 12:03 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3491//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun 24 18:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3491//PJ230623_R184_3491_Batch-1.tsv
+GCP for PJ230623_R184_3491
+gs://skywalker-v2-rawdata/PJ230623_R184_3491/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_3491/ saved.
+=== PJ230623_R184_3492 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jun 26 12:03 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3492//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jun 25 02:47 /illumina/Projects/Project_Finis_EXT//PJ230623_R184_3492//PJ230623_R184_3492_Batch-1.tsv
+GCP for PJ230623_R184_3492
+gs://skywalker-v2-rawdata/PJ230623_R184_3492/ saved.
+gs://skywalker-v2-analyses/PJ230623_R184_3492/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-13 17:09:42.472721654+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-08-13 17:09:42.474402221+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 963272 ("Transfer_ARCHIVE") has been submitted
+2023-08-13 17:09:42.576353387+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-08-13 17:09:42.578178665+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 963273 ("Transfer_CLINIQ") has been submitted
+2023-08-13 17:09:42.617672955+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-08-13 17:09:42.619501980+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 963274 ("Transfer_EXT") has been submitted
+2023-08-13 17:09:42.703192322+02:00 |BENE_INFO| End EXT_transfer.sh
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-08-20 17:00:01.536212705+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230820.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230820.txt 
+
+Starting cleaning at: 	 Sun Aug 20 17:00:01 CEST 2023
+Folder age is set to 90 days.
+=== PJ2205189-De-Tayrac-Whole-Genome-Human-SA_PJ2205189_4 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2205189-De-Tayrac-Whole-Genome-Human-SA_PJ2205189_4//*.tsv: No such file or directory
+=== PJ2302051-Kammler-RNACapture-SA_PJ2302051 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302051-Kammler-RNACapture-SA_PJ2302051//*.tsv: No such file or directory
+=== PJ2302052-Trefond-Extraction-TWIGExoSpikeV2-SA_PJ2302052 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2302052-Trefond-Extraction-TWIGExoSpikeV2-SA_PJ2302052//*.tsv: No such file or directory
+=== PJ2303096-Silvestre-WG-PCR-free-SA_PJ2303096 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303096-Silvestre-WG-PCR-free-SA_PJ2303096//*.tsv: No such file or directory
+=== PJ2303110-Chalmel-Seq-Only-BRBseq-SA_PJ2303110 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303110-Chalmel-Seq-Only-BRBseq-SA_PJ2303110//*.tsv: No such file or directory
+=== PJ2303110-Chalmel-Seq-Only-BRBseq-SA_PJ2303110_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303110-Chalmel-Seq-Only-BRBseq-SA_PJ2303110_2//*.tsv: No such file or directory
+=== PJ2303111-Weber-Seq-Only-SA_PJ2303111 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303111-Weber-Seq-Only-SA_PJ2303111//*.tsv: No such file or directory
+Operations finished.
+2023-08-20 17:00:28.138835074+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-08-20 17:00:28.140518378+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier AIRIC_6298-J1_AIRIC_6298-J1: moved.
+dossier AIRIC_6336-J1_AIRIC_6336-J1: moved.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-08-20 17:00:28.381314785+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230820.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230820.txt 
+
+Starting cleaning at: 	 Sun Aug 20 17:00:28 CEST 2023
+Folder age is set to 35 days.
+=== AIRIC_6177-J1_AIRIC_6177-J1 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 112 Jul 10 13:43 /illumina/Projects/Project_Finis_CLINIQ//AIRIC_6177-J1_AIRIC_6177-J1//AIRIC_6177-J1.tsv
+GCP for AIRIC_6177-J1
+gs://skywalker-v2-rawdata/AIRIC_6177-J1/ saved.
+gs://skywalker-v2-analyses/AIRIC_6177-J1/ saved.
+=== AIRIC_6192-J1_AIRIC_6192-J1 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 112 Jul 10 13:41 /illumina/Projects/Project_Finis_CLINIQ//AIRIC_6192-J1_AIRIC_6192-J1//AIRIC_6192-J1.tsv
+GCP for AIRIC_6192-J1
+gs://skywalker-v2-rawdata/AIRIC_6192-J1/ saved.
+gs://skywalker-v2-analyses/AIRIC_6192-J1/ saved.
+=== BIOMEDE2_043_BIOMEDE2_043 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 142 Jun 12 14:13 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_043_BIOMEDE2_043//BIOMEDE2_043.tsv
+GCP for BIOMEDE2_043
+gs://skywalker-v2-rawdata/BIOMEDE2_043/ saved.
+gs://skywalker-v2-analyses/BIOMEDE2_043/ saved.
+=== RARE_371_RARE_371 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 117 Jul 10 13:36 /illumina/Projects/Project_Finis_CLINIQ//RARE_371_RARE_371//RARE_371.tsv
+GCP for RARE_371
+gs://skywalker-v2-rawdata/RARE_371/ saved.
+gs://skywalker-v2-analyses/RARE_371/ saved.
+=== RARE_373_RARE_373 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 117 Jul 11 16:51 /illumina/Projects/Project_Finis_CLINIQ//RARE_373_RARE_373//RARE_373.tsv
+GCP for RARE_373
+gs://skywalker-v2-rawdata/RARE_373/ saved.
+gs://skywalker-v2-analyses/RARE_373/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-20 17:05:26.194719422+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-08-20 17:05:26.196414149+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230820.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230820.txt 
+
+Starting cleaning at: 	 Sun Aug 20 17:05:26 CEST 2023
+Folder age is set to 45 days.
+=== EMC-MAU-055-001 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 155 Jun 22 14:46 /illumina/Projects/Project_Finis_EXT//EMC-MAU-055-001//EMC-MAU-055-001.tsv
+GCP for EMC-MAU-055-001
+gs://skywalker-v2-rawdata/EMC-MAU-055-001/ saved.
+gs://skywalker-v2-analyses/EMC-MAU-055-001/ saved.
+=== PJ230630_R185_1955 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jul  3 12:06 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_1955//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jun 30 18:48 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_1955//PJ230630_R185_1955_Batch-1.tsv
+GCP for PJ230630_R185_1955
+gs://skywalker-v2-rawdata/PJ230630_R185_1955/ saved.
+gs://skywalker-v2-analyses/PJ230630_R185_1955/ saved.
+=== PJ230630_R185_3374 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 80 Jul  3 12:06 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3374//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 75 Jul  1 02:48 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3374//PJ230630_R185_3374_Batch-1.tsv
+GCP for PJ230630_R185_3374
+gs://skywalker-v2-rawdata/PJ230630_R185_3374/ saved.
+gs://skywalker-v2-analyses/PJ230630_R185_3374/ saved.
+=== PJ230630_R185_3488 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jul  3 12:07 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3488//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jul  1 10:48 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3488//PJ230630_R185_3488_Batch-1.tsv
+GCP for PJ230630_R185_3488
+gs://skywalker-v2-rawdata/PJ230630_R185_3488/ saved.
+gs://skywalker-v2-analyses/PJ230630_R185_3488/ saved.
+=== PJ230630_R185_3535 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jul  4 11:51 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3535//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jul  3 18:48 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3535//PJ230630_R185_3535_Batch-1.tsv
+GCP for PJ230630_R185_3535
+gs://skywalker-v2-rawdata/PJ230630_R185_3535/ saved.
+gs://skywalker-v2-analyses/PJ230630_R185_3535/ saved.
+=== PJ230630_R185_3536 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jul  3 12:07 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3536//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jul  1 18:48 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3536//PJ230630_R185_3536_Batch-1.tsv
+GCP for PJ230630_R185_3536
+gs://skywalker-v2-rawdata/PJ230630_R185_3536/ saved.
+gs://skywalker-v2-analyses/PJ230630_R185_3536/ saved.
+=== PJ230630_R185_3537 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 70 Jul  3 12:08 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3537//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 65 Jul  2 02:48 /illumina/Projects/Project_Finis_EXT//PJ230630_R185_3537//PJ230630_R185_3537_Batch-1.tsv
+GCP for PJ230630_R185_3537
+gs://skywalker-v2-rawdata/PJ230630_R185_3537/ saved.
+gs://skywalker-v2-analyses/PJ230630_R185_3537/ saved.
+=== PJ230704_R185_3542 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 71 Jul  5 11:04 /illumina/Projects/Project_Finis_EXT//PJ230704_R185_3542//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 66 Jul  5 10:49 /illumina/Projects/Project_Finis_EXT//PJ230704_R185_3542//PJ230704_R185_3542_Batch-1.tsv
+GCP for PJ230704_R185_3542
+gs://skywalker-v2-rawdata/PJ230704_R185_3542/ saved.
+gs://skywalker-v2-analyses/PJ230704_R185_3542/ saved.
+=== PJ230704_R185_3543 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 71 Jul  5 11:03 /illumina/Projects/Project_Finis_EXT//PJ230704_R185_3543//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 66 Jul  5 02:49 /illumina/Projects/Project_Finis_EXT//PJ230704_R185_3543//PJ230704_R185_3543_Batch-1.tsv
+GCP for PJ230704_R185_3543
+gs://skywalker-v2-rawdata/PJ230704_R185_3543/ saved.
+gs://skywalker-v2-analyses/PJ230704_R185_3543/ saved.
+=== PJ230704_R185_3544 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 71 Jul  5 11:03 /illumina/Projects/Project_Finis_EXT//PJ230704_R185_3544//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 66 Jul  4 18:48 /illumina/Projects/Project_Finis_EXT//PJ230704_R185_3544//PJ230704_R185_3544_Batch-1.tsv
+GCP for PJ230704_R185_3544
+gs://skywalker-v2-rawdata/PJ230704_R185_3544/ saved.
+gs://skywalker-v2-analyses/PJ230704_R185_3544/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-20 17:13:46.894813416+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-08-20 17:13:46.896659303+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 964283 ("Transfer_ARCHIVE") has been submitted
+2023-08-20 17:13:46.972540330+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-08-20 17:13:46.974409116+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 964284 ("Transfer_CLINIQ") has been submitted
+2023-08-20 17:13:47.012013726+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-08-20 17:13:47.013832013+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 964285 ("Transfer_EXT") has been submitted
+2023-08-20 17:13:47.062381986+02:00 |BENE_INFO| End EXT_transfer.sh
+Current known analyses tags: 
+	Patient ID Project_Name Project_ID
+Current deleted local folders: 
+	Rawdata SeqOutput Rawdata_backup STAR_TMP temp_lambda temp_pUC
+Current deleted local suffixed files: 
+	fastq.gz bam bam.bai _Genetic_Variants.txt wig.gz CGmap.gz wig fastq sam mpileup
+Current deleted local prefixed files: 
+	core
+Current known clinical protocols: 
+	HP RARE_StAnne RARE BIOMEDE2 BIOMEDE AIRIC DEBRE Clinique K_Rare MAPPY Micchado Moscato2 Moscato MatchR
+2023-08-27 17:00:01.403128008+02:00 |BENE_INFO| Begin ARCHIVE clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/ARCHIVE//Logs/cleaning_20230827.txt
+GCP list to check: 	 /illumina/Projects/ARCHIVE//Logs/remaining_skywalker_paths_20230827.txt 
+
+Starting cleaning at: 	 Sun Aug 27 17:00:01 CEST 2023
+Folder age is set to 90 days.
+=== PJ2010371-JAILLARD-TWIGExoSpikeV2_PJ2010371_9 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 77 Apr 26 16:40 /illumina/Projects/ARCHIVE//PJ2010371-JAILLARD-TWIGExoSpikeV2_PJ2010371_9//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 72 Apr 26 16:36 /illumina/Projects/ARCHIVE//PJ2010371-JAILLARD-TWIGExoSpikeV2_PJ2010371_9//PJ2010371_9_Batch-1.tsv
+GCP for PJ2010371_9
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2108346-LEE-Paired-End-ADN-Environnemental-SA_PJ2108346_4 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2108346-LEE-Paired-End-ADN-Environnemental-SA_PJ2108346_4//*.tsv: No such file or directory
+=== PJ2112534_Families-Zeitz-Whole-Genome-human ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2112534_Families-Zeitz-Whole-Genome-human//*.tsv: No such file or directory
+=== PJ2207285-Janoueix-Lerosey-10X-SingleNuclei_PJ2207285_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2207285-Janoueix-Lerosey-10X-SingleNuclei_PJ2207285_2//*.tsv: No such file or directory
+=== PJ2209332-Putoux-WG-humain_PJ2209332 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 172 Feb  3  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//familles_yoda_modif.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 212 Feb  3  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//familles_yoda.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 207 Feb  2  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 104 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F1123_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 104 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F1456_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser  75 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F178_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser  62 Dec  8  2022 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F2_Batch-2.tsv
+-rwxrwxr-x 1 sbsuser sbsuser  69 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F3_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 106 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F4123_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 106 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F4456_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 106 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F5123_Batch-1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 106 Jan 12  2023 /illumina/Projects/ARCHIVE//PJ2209332-Putoux-WG-humain_PJ2209332//PJ2209332_F5456_Batch-1.tsv
+GCP for PJ2209332
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F1123
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F1456
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F1456 F1456
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F178
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F178 F178
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F2
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F3
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F3 F3
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F4123
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F4123 F4123 F43
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F4456
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F4456 F4456 F46
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F5123
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F5123 F5123 F53
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F5456
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for PJ2209332_F5456 F5456 F56
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_9 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2211415-Duffourd-TWIGExoSpikeV2-prenatome-SA_PJ2211415_9//*.tsv: No such file or directory
+=== PJ2212454-Landri-Seq-Only-exomes-2pools-SA_PJ2212454 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2212454-Landri-Seq-Only-exomes-2pools-SA_PJ2212454//*.tsv: No such file or directory
+=== PJ2303080-Passera-WG-Vegetal-SA_PJ2303080 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303080-Passera-WG-Vegetal-SA_PJ2303080//*.tsv: No such file or directory
+=== PJ2303084-Vidal-WG-MethSeq-SA_PJ2303084_2 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303084-Vidal-WG-MethSeq-SA_PJ2303084_2//*.tsv: No such file or directory
+=== PJ2303089-Vitobello-WG-Human-SA_PJ2303089 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303089-Vitobello-WG-Human-SA_PJ2303089//*.tsv: No such file or directory
+=== PJ2303108-Letouze-WG-human-SA_PJ2303108 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2303108-Letouze-WG-human-SA_PJ2303108//*.tsv: No such file or directory
+=== PJ2304124-Chaulot-Seq-Only-RRBS-SA_PJ2304124 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/ARCHIVE//PJ2304124-Chaulot-Seq-Only-RRBS-SA_PJ2304124//*.tsv: No such file or directory
+Operations finished.
+2023-08-27 17:02:34.375492265+02:00 |BENE_INFO| End ARCHIVE clean_Projects_category.sh
+2023-08-27 17:02:34.376968866+02:00 |BENE_INFO| CLINIC retrieval from Project_Finis
+Searching for ^RARE_StAnne in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^RARE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^BIOMEDE2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier BIOMEDE2_051_BIOMEDE2_051: moved.
+dossier BIOMEDE2_052_BIOMEDE2_052: moved.
+dossier BIOMEDE2_053_BIOMEDE2_053: moved.
+Searching for ^BIOMEDE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^AIRIC in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+dossier AIRIC_01-5638-J1: moved.
+dossier AIRIC_01-5800: moved.
+dossier AIRIC_5620-J1: moved.
+Searching for ^DEBRE in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Clinique in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^K_Rare in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MAPPY in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Micchado in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato2 in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^Moscato in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+Searching for ^MatchR in /home/sbsuser to be moved in /illumina/Projects/Project_Finis_CLINIQ/.
+2023-08-27 17:02:34.665985634+02:00 |BENE_INFO| Begin CLINIQ clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/cleaning_20230827.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_CLINIQ//Logs/remaining_skywalker_paths_20230827.txt 
+
+Starting cleaning at: 	 Sun Aug 27 17:02:34 CEST 2023
+Folder age is set to 35 days.
+=== AIRIC_01-5638-J1 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 112 Feb 13  2023 /illumina/Projects/Project_Finis_CLINIQ//AIRIC_01-5638-J1//AIRIC_5638-J1.tsv
+GCP for AIRIC_5638-J1
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== AIRIC_01-5800 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 102 Mar 28 13:56 /illumina/Projects/Project_Finis_CLINIQ//AIRIC_01-5800//01-5800-J1.tsv
+-rwxrwxr-x 1 sbsuser sbsuser 112 Mar 28 14:01 /illumina/Projects/Project_Finis_CLINIQ//AIRIC_01-5800//AIRIC_01-5800.tsv
+GCP for 01-5800-J1
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for AIRIC_01-5800
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== AIRIC_5620-J1 ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/Project_Finis_CLINIQ//AIRIC_5620-J1//*.tsv: No such file or directory
+=== BIOMEDE2_047_BIOMEDE2_047 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 146 Jul 17 14:40 /illumina/Projects/Project_Finis_CLINIQ//BIOMEDE2_047_BIOMEDE2_047//BIOMEDE2_047.tsv
+GCP for BIOMEDE2_047
+gs://skywalker-v2-rawdata/BIOMEDE2_047/ saved.
+gs://skywalker-v2-analyses/BIOMEDE2_047/ saved.
+=== RARE_374_RARE_374 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 120 Jul 17 14:47 /illumina/Projects/Project_Finis_CLINIQ//RARE_374_RARE_374//RARE_374.tsv
+GCP for RARE_374
+gs://skywalker-v2-rawdata/RARE_374/ saved.
+gs://skywalker-v2-analyses/RARE_374/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-27 17:05:05.851295055+02:00 |BENE_INFO| End CLINIQ clean_Projects_category.sh
+2023-08-27 17:05:05.853157951+02:00 |BENE_INFO| Begin EXTernal clean_Projects_category.sh
+Follow me: 	 /illumina/Projects/Project_Finis_EXT//Logs/cleaning_20230827.txt
+GCP list to check: 	 /illumina/Projects/Project_Finis_EXT//Logs/remaining_skywalker_paths_20230827.txt 
+
+Starting cleaning at: 	 Sun Aug 27 17:05:05 CEST 2023
+Folder age is set to 45 days.
+=== 015-001 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 119 Apr 27 14:43 /illumina/Projects/Project_Finis_EXT//015-001//015-001.tsv
+GCP for 015-001
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== 19H16736 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 122 Apr 27 14:44 /illumina/Projects/Project_Finis_EXT//19H16736//19H16736.tsv
+GCP for 19H16736
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== EMC-MEZ-070-001 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 155 Jul  5 18:49 /illumina/Projects/Project_Finis_EXT//EMC-MEZ-070-001//EMC-MEZ-070-001.tsv
+GCP for EMC-MEZ-070-001
+gs://skywalker-v2-rawdata/EMC-MEZ-070-001/ saved.
+gs://skywalker-v2-analyses/EMC-MEZ-070-001/ saved.
+=== Ext-GATOR-3 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 153 May  5 12:59 /illumina/Projects/Project_Finis_EXT//Ext-GATOR-3//Ext-GATOR-3_2.tsv
+-rw-rw---- 1 sbsuser sbsuser 151 Apr  7 16:43 /illumina/Projects/Project_Finis_EXT//Ext-GATOR-3//Ext-GATOR-3.tsv
+-rw-rw---- 1 sbsuser sbsuser 118 May 22 17:00 /illumina/Projects/Project_Finis_EXT//Ext-GATOR-3//Hy03_bis_2.tsv
+GCP for Ext-GATOR-3
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for Ext-GATOR-3_2
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for Hy03_bis_2
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== FATHMM ===
+Cleaning local folder...
+ls: cannot access /illumina/Projects/Project_Finis_EXT//FATHMM//*.tsv: No such file or directory
+=== MARAZZ_PCL ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 142 Mar  9 14:35 /illumina/Projects/Project_Finis_EXT//MARAZZ_PCL//MARAZZ_PCL.tsv
+GCP for MARAZZ_PCL
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 109 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR091.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1001.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1003.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1005.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1006.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1007.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1008.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1011.tsv
+-rw-rw---- 1 sbsuser sbsuser 124 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1012-re.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1012.tsv
+-rw-rw---- 1 sbsuser sbsuser  99 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1013.tsv
+-rw-rw---- 1 sbsuser sbsuser  99 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1015.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1019.tsv
+-rw-rw---- 1 sbsuser sbsuser  99 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1021.tsv
+-rw-rw---- 1 sbsuser sbsuser  66 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1022.tsv
+-rw-rw---- 1 sbsuser sbsuser  66 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1024.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1025.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1026.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1027.tsv
+-rw-rw---- 1 sbsuser sbsuser 124 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1029-re.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1029.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1031.tsv
+-rw-rw---- 1 sbsuser sbsuser  66 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1034.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1055.tsv
+-rw-rw---- 1 sbsuser sbsuser  99 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1069.tsv
+-rw-rw---- 1 sbsuser sbsuser  99 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1073.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1103.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1109.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1154.tsv
+-rw-rw---- 1 sbsuser sbsuser 110 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1156.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1168.tsv
+-rw-rw---- 1 sbsuser sbsuser 113 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1169.tsv
+-rw-rw---- 1 sbsuser sbsuser 121 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR1170.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR260.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR520.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR548.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR553.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR554.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR563.tsv
+-rw-rw---- 1 sbsuser sbsuser  98 May 31  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR586.tsv
+-rw-rw---- 1 sbsuser sbsuser  98 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR587.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR602.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR603.tsv
+-rw-rw---- 1 sbsuser sbsuser  98 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR616.tsv
+-rw-rw---- 1 sbsuser sbsuser 112 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR619.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR620.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR668.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR673.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR686.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR698.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR701.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR719.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR746.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 May 27  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR764.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR786.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR808.tsv
+-rw-rw---- 1 sbsuser sbsuser 120 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR813.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR852.tsv
+-rw-rw---- 1 sbsuser sbsuser 109 Jun 23  2022 /illumina/Projects/Project_Finis_EXT//PJ2205202-VASSEUR-WES-RNA_MERCURY-Ext//MR892.tsv
+GCP for MR091
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1001
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1003
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1005
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1006
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1007
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1008
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1011
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1012
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1012-re
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1013
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1015
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1019
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1021
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1025
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1026
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1027
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1029
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1029-re
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1031
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1055
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1069
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1073
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1103
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1109
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1154
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1156
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1168
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1169
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR1170
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR260
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR520
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR548
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR553
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR554
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR563
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR586
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR587
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR602
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR603
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR616
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR619
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR620
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR668
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR673
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR686
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR698
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR701
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR719
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR746
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR764
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR786
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR808
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR813
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR852
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+GCP for MR892
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-rawdata.
+CommandException: One or more URLs matched no objects.
+No folder found into gs://skywalker-v2-analyses.
+=== PJ230707_R186_1701 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jul 10 12:00 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_1701//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jul  8 02:49 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_1701//PJ230707_R186_1701_Batch-1.tsv
+GCP for PJ230707_R186_1701
+gs://skywalker-v2-rawdata/PJ230707_R186_1701/ saved.
+gs://skywalker-v2-analyses/PJ230707_R186_1701/ saved.
+=== PJ230707_R186_2426 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 90 Jul 10 12:01 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_2426//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 85 Jul  8 10:49 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_2426//PJ230707_R186_2426_Batch-1.tsv
+GCP for PJ230707_R186_2426
+gs://skywalker-v2-rawdata/PJ230707_R186_2426/ saved.
+gs://skywalker-v2-analyses/PJ230707_R186_2426/ saved.
+=== PJ230707_R186_3532 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 81 Jul 12 10:56 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_3532//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 76 Jul  7 18:49 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_3532//PJ230707_R186_3532_Batch-1.tsv
+GCP for PJ230707_R186_3532
+gs://skywalker-v2-rawdata/PJ230707_R186_3532/ saved.
+gs://skywalker-v2-analyses/PJ230707_R186_3532/ saved.
+=== PJ230707_R186_3552 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 71 Jul 10 12:02 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_3552//familles_yoda.tsv
+-rw-rw---- 1 sbsuser sbsuser 66 Jul  8 18:49 /illumina/Projects/Project_Finis_EXT//PJ230707_R186_3552//PJ230707_R186_3552_Batch-1.tsv
+GCP for PJ230707_R186_3552
+gs://skywalker-v2-rawdata/PJ230707_R186_3552/ saved.
+gs://skywalker-v2-analyses/PJ230707_R186_3552/ saved.
+=== T1017 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 128 Jun 20 20:46 /illumina/Projects/Project_Finis_EXT//T1017//T1017_1.tsv
+-rw-rw---- 1 sbsuser sbsuser 132 Jun 30 19:23 /illumina/Projects/Project_Finis_EXT//T1017//T1017.tsv
+GCP for T1017
+gs://skywalker-v2-rawdata/T1017/ saved.
+gs://skywalker-v2-analyses/T1017/ saved.
+=== T1019 ===
+Cleaning local folder...
+-rwxrwxr-x 1 sbsuser sbsuser 121 Jun 20 20:46 /illumina/Projects/Project_Finis_EXT//T1019//T1019.tsv
+GCP for T1019
+gs://skywalker-v2-rawdata/T1019/ saved.
+gs://skywalker-v2-analyses/T1019/ saved.
+=== T1022 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 121 Jul  4 14:49 /illumina/Projects/Project_Finis_EXT//T1022//T1022.tsv
+GCP for T1022
+gs://skywalker-v2-rawdata/T1022/ saved.
+gs://skywalker-v2-analyses/T1022/ saved.
+=== T1023 ===
+Cleaning local folder...
+-rw-rw---- 1 sbsuser sbsuser 121 Jul  4 14:49 /illumina/Projects/Project_Finis_EXT//T1023//T1023.tsv
+GCP for T1023
+gs://skywalker-v2-rawdata/T1023/ saved.
+gs://skywalker-v2-analyses/T1023/ saved.
+Deleting GCP skywalker-v2 paths...
+Operations finished.
+2023-08-27 17:28:16.294370328+02:00 |BENE_INFO| End EXTernal clean_Projects_category.sh
+2023-08-27 17:28:16.296001466+02:00 |BENE_INFO| Begin ARCHIVE_transfer.sh
+Your job 965528 ("Transfer_ARCHIVE") has been submitted
+2023-08-27 17:28:16.369708444+02:00 |BENE_INFO| End ARCHIVE_transfer.sh
+2023-08-27 17:28:16.371372269+02:00 |BENE_INFO| Begin CLINIQ_transfer.sh
+Your job 965529 ("Transfer_CLINIQ") has been submitted
+2023-08-27 17:28:16.398839121+02:00 |BENE_INFO| End CLINIQ_transfer.sh
+2023-08-27 17:28:16.400512583+02:00 |BENE_INFO| Begin EXT_transfer.sh
+Your job 965530 ("Transfer_EXT") has been submitted
+2023-08-27 17:28:16.435758098+02:00 |BENE_INFO| End EXT_transfer.sh
