@@ -14,22 +14,23 @@ source /home/sbsuser/.bashrc
 
 ######recuperer le code d'authentification
 authentification="$(curl -s -X POST \
-  https://api-mercury.integragen.com/oauth/v2/token \
+  https://api-mercury.integragen.com/token \
   -H 'accept: application/json' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/x-www-form-urlencoded' \
   -H 'postman-token: 52df101f-9802-b075-1346-8216998514d9' \
-  -d 'grant_type=password&client_id=1_3bcbxd9e24g0gk4swg0kwgcwg4o8k8g4g888kwc44gcc0gwwk4&client_secret=4ok2x70rlfokc8g0wws8c8kwcokw80k44sg48goc0ok4w0so0k&username=bioinf&password=sio22')"
+  -d "grant_type=password&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET&username=$USERNAME&password=$PASSWORD")"
+
 
 #récupérer le password
 echo "Start Mercury API session"
-password=`echo ${authentification} | awk -F"," '{print $1}' | awk -F ":" ' {print $2}' | sed "s/\"//g"`
+password=$(echo "${authentification}" | grep -o '"access_token": *"[^"]*' | sed 's/"access_token": *"//')
 echo "${password}"
 
 #récupérer les informations du projet
 
 Informations="$(curl -s -X GET \
-  https://api-mercury.integragen.com/analyzesOutside \
+  https://api-mercury.integragen.com/analyzes/processable \
   -H 'accept: application/json' \
   -H 'authorization: Bearer '${password} \
   -H 'cache-control: no-cache' \
@@ -101,7 +102,9 @@ if [[ "$PROJECTS" != "" ]]; then
     fi
 
     bash $PATH_SCRIPT_DIR/1.2.Implementation_Project/LaunchInmplementation_CLOUD_Ext.sh $project $PATH_SCRIPT_DIR UE $PATH_SCRIPT_SKYWALKER
-    bash $PATH_SCRIPT_DIR/4.3.MERCURY/Update_status_analysis_Mercury_VEP101.sh $project $PATIENT_ID $NAME_ANALYSIS 2 $PATH_SCRIPT_DIR
+
+    # TODO Need to put the script for the new version to update analysis status to 2
+    # bash $PATH_SCRIPT_DIR/4.3.MERCURY/Update_status_analysis_Mercury_VEP101.sh $project $PATIENT_ID $NAME_ANALYSIS 2 $PATH_SCRIPT_DIR
 done
   echo "All Projects processed."
 else
