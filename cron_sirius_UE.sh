@@ -13,15 +13,15 @@ source /home/sbsuser/.bashrc ;
 Informations=`ssh -n sbsuser@130.211.104.146 "/opt/bitnami/php/bin/php /opt/bitnami/apache2/htdocs/bin/console app:project-statut-fastq-uploaded"` ;
 echo "$(date --rfc-3339=ns) |ALEX_INFO| Informations = $Informations" ;
 
-PROJECTS=`echo $Informations | tr "{" "\n" | grep nom | cut -f2 -d "," | sed 's/[}*]//g' | cut -f2 -d ":" |sed 's/]//g' | sed 's/"//g' | grep -v Leportier` || echo "$(date --rfc-3339=ns) |ALEX_ERROR| Legacy parsing failed attempting new strategy" ; 
+#PROJECTS=`echo $Informations | tr "{" "\n" | grep nom | cut -f2 -d "," | sed 's/[}*]//g' | cut -f2 -d ":" |sed 's/]//g' | sed 's/"//g' | grep -v Leportier` || echo "$(date --rfc-3339=ns) |ALEX_ERROR| Legacy parsing failed attempting new strategy" ; 
 
-PROJECTS=$(echo "$Informations" | jq -r '.[0] | .nom') || echo "$(date --rfc-3339=ns) |ALEX_ERROR| New strategy failed" ;
+PROJECTS=$(echo "$Informations" | jq -r '.[] | .nom') || echo "$(date --rfc-3339=ns) |ALEX_ERROR| New strategy failed" ;
 
 echo "$(date --rfc-3339=ns) |ALEX_INFO| PROJECTS = $PROJECTS" ;
 if [[ "$PROJECTS" != "" ]]; then 
     echo "$(date --rfc-3339=ns) | All theses projects were got from Sirius: $PROJECTS" ;
-   #for project in $PROJECTS
-    for project in "${PROJECTS[0]}" ;
+   for project in $PROJECTS
+   #for project in "${PROJECTS[0]}" ;
     do
         echo "$(date --rfc-3339=ns) | Working on $project ..." ;
         ###s'occuper du bed du client
