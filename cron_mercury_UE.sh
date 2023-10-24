@@ -56,7 +56,7 @@ Informations=$(curl -s -X POST \
     
 #récupérer les projets à lancer  avec le statut 1: fastq uploaded
 echo $Informations
-PROJECTS=`echo $Informations |jq '.analyzes[] | select(.status == 1 and .analyzes.captureKit != "OncoDEEP_kit") | .patient.nip ' | uniq | sort` 
+PROJECTS=`echo $Informations |jq '.analyzes[] | select(.status == 1 and .captureKit != "OncoDEEP_kit") | .patient.nip ' | uniq | sort` 
 #on retire les " si besoin
 PROJECTS=$(echo "${PROJECTS}" | sed 's/"//g')
 echo $PROJECTS
